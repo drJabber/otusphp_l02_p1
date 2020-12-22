@@ -22,7 +22,7 @@ class bracketer
             elseif ($ch == ')'){
                 $counter--;
             }elseif (!($ch == '\n' or $ch == ' ' or $ch == '\t' or $ch == '\r')){
-                throw new InvalidArgumentException('very bar character - '.$ch);
+                throw new \InvalidArgumentException('very bar character - '.$ch);
             }
             if ($counter<0){
                 return false;
