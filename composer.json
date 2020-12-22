@@ -3,5 +3,9 @@
     "description": "bracket counter",
     "type": "library",
     "license": "GPL-3.0-or-later",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {"djabber\\": "./"}
+    }
+
 }
