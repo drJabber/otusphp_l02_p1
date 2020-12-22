@@ -2,6 +2,6 @@
     "name": "djabber/bracketer",
     "description": "bracket counter",
     "type": "library",
-    "license": "GPL",
+    "license": "GPL-3.0-or-later",
     "require": {}
 }
