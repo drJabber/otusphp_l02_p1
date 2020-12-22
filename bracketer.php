@@ -13,7 +13,8 @@ class bracketer
 {
   public function check($source){
       $counter = 0;
-      foreach ($source as $ch){
+      $src = str_split($source);
+      foreach ($src as $ch){
             if ($ch == '('){
                 $counter++;
             }
