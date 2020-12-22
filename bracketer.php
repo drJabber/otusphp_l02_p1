@@ -21,8 +21,8 @@ class bracketer
             }
             elseif ($ch == ')'){
                 $counter--;
-            }elseif (!($ch == '\n' or $ch == ' ' or $ch == '\t' or $ch == '\r')){
-                throw new \InvalidArgumentException('very bar character - '.$ch);
+            }elseif (!($ch == chr(13) or $ch == ' ' or $ch == chr(9) or $ch == chr(10))){
+                throw new \InvalidArgumentException('very bar character - ' . ord($ch));
             }
             if ($counter<0){
                 return false;
