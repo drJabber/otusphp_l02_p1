@@ -19,6 +19,8 @@ class bracketer
             }
             elseif ($ch == ')'){
                 $counter--;
+            }elseif (!($ch == '\n' or $ch == ' ' or $ch == '\t' or $ch == '\r')){
+                throw InvalidArgumentException;
             }
             if ($counter<0){
                 return false;
